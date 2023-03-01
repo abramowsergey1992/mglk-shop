@@ -1,0 +1,52 @@
+.like-change {
+	cursor: pointer;
+	z-index: 11;
+
+	svg {
+		transition: transform 0.3s;
+	}
+
+	label {
+		position: relative;
+		cursor: pointer;
+	}
+
+	&:hover svg {
+		transform: scale(1.1);
+	}
+
+	span {
+		font-size: 12px;
+		line-height: 16px;
+		/* identical to box height */
+		position: relative;
+		top: -2px;
+		letter-spacing: -0.02em;
+		text-transform: uppercase;
+
+		@media(max-width:992px) {
+			display: none;
+		}
+	}
+
+	input {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		margin: 0;
+		height: 100%;
+		opacity: 0;
+	}
+
+	path {
+		stroke: $black;
+	}
+
+	input:checked+svg {
+		path {
+			fill: $red;
+			stroke: $red;
+		}
+	}
+}

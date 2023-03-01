@@ -1,0 +1,20 @@
+{
+	"products": [
+		{
+			"imgj": "img/p-2.jpg",
+			"imgw": "img/p-2.webp",
+			"title": "Бабушкины варежки",
+			"description": " One size   |   BLUE/WHITE",
+			"count": 1,
+			"price": 1200
+		},
+		{
+			"imgj": "img/p-2.jpg",
+			"imgw": "img/p-2.webp",
+			"title": "Бабушкины варежки",
+			"description": " One size   |   BLUE/WHITE",
+			"count": 1,
+			"price": 1200
+		}
+	]
+}

@@ -1,0 +1,88 @@
+extends ../../layout/layout
+block title
+	title Манжерок 
+block content
+	.inner
+		+breadcrumb(['Главная', 'Новая коллекция'], 'Бабушкины варежки')
+		a.h1._back(href="#") 
+				<svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14 23.5L2.15385 12.5L14 1.5" stroke="#B2C2D3" stroke-width="2"/>
+				</svg>
+				| Бабушкины варежки
+		.block
+			.product
+				.product__grid
+					.product__info._v-mob
+						.product__info-head
+							.product__info-label НОВАЯ КОЛЛЕКЦИЯ
+							.product__info-status._not-available НЕТ В НАЛИЧИИ
+							form(action="json/favorite.json",method="GET").product__info-favorite.like-change
+								label.product__info-favorite
+									input(type="checkbox",name="favorite",data-like="В избранноМ",data-notlike="В избранное").like-change__checkbox
+									<svg width="16" height="13" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.35585 6.03553L7.32031 12L13.2848 6.03553C13.9478 5.37249 14.3203 4.47322 14.3203 3.53553C14.3203 1.58291 12.7374 0 10.7848 0C9.8471 0 8.94782 0.372492 8.28478 1.03553L7.32031 2L6.35585 1.03553C5.69281 0.372493 4.79353 0 3.85585 0C1.90322 0 0.320312 1.58291 0.320312 3.53553C0.320312 4.47322 0.692804 5.37249 1.35585 6.03553Z" fill="white"/>
+									</svg>  
+									span В избранное
+						
+					.product__main-img 
+						+picture('p-1','jpg')
+					.product__info._empty
+						.product__info-head._v-desc
+							.product__info-label НОВАЯ КОЛЛЕКЦИЯ
+							.product__info-status._not-available НЕТ В НАЛИЧИИ
+							form(action="json/favorite.json",method="GET").product__info-favorite.like-change
+								label.product__info-favorite
+									input(type="checkbox",name="favorite",data-like="В избранноМ",data-notlike="В избранное").like-change__checkbox
+									<svg width="16" height="13" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.35585 6.03553L7.32031 12L13.2848 6.03553C13.9478 5.37249 14.3203 4.47322 14.3203 3.53553C14.3203 1.58291 12.7374 0 10.7848 0C9.8471 0 8.94782 0.372492 8.28478 1.03553L7.32031 2L6.35585 1.03553C5.69281 0.372493 4.79353 0 3.85585 0C1.90322 0 0.320312 1.58291 0.320312 3.53553C0.320312 4.47322 0.692804 5.37249 1.35585 6.03553Z" fill="white"/>
+									</svg>  
+									span В избранное
+						.product__info-desc 
+							p Просто худи, ничего лишнего. Базовая вещь на каждый день, отлично сидит и не мнётся
+						.product__info-parametrs 
+							ul 
+								li 
+									span.product__info-parametrs-headline Размер:
+									.product__info-parametr-row 
+										label.product__info-parametr
+											input(type="radio",name="size",value="xs",checked) 
+											span XS
+										label.product__info-parametr
+											input(type="radio",name="size",value="S") 
+											span S
+										label.product__info-parametr
+											input(type="radio",name="size",value="M") 
+											span M
+								li 
+									span.product__info-parametrs-headline Цвет:
+									.product__info-parametr-row 
+										label.product__info-parametr
+											input(type="radio",name="color",value="черный",checked) 
+											span черный
+										label.product__info-parametr
+											input(type="radio",name="color",value="Синий") 
+											span Синий
+										label.product__info-parametr
+											input(type="radio",name="color",value="Белый") 
+											span Белый
+
+						.product__info-footer 
+							button.btn4.product__msg-availability(data-popup="#subs-form")  Сообщить о поступлении
+							.product__info-count-wrap 
+								button(type='button').product__info-count-minus -
+								input(type="number",value='1').product__info-count-input
+								button(type='button').product__info-count-plus +
+							button.btn2.product__info-addcart(type="submit") Добавить в корзину
+					a.product-photo._br(href="img/p-2.jpg", data-fancybox="products")
+						+picture('p-2','jpg')
+					a.product-photo._br(href="img/p-3.jpg", data-fancybox="products")
+						+picture('p-3','jpg')
+					a.product-photo._br._col-2(href="img/p-4.jpg", data-fancybox="products")
+						+picture('p-4','jpg')
+					.product__text._col-2._p._br.text
+						p «А что если, каждый кто хочет такие же теплые вещи, которые вязали нам бабушки, мог бы просто взять и купить их в магазине?»  — Подумали мы и запустили производство настоящих варежек и теплых носков, связанных в ручную, сибирскими бабушками. Да-да! Нашими бабушками!
+						blockquote Ищите в нашем каталоге варежки и носки с крутым сибирским дизайном, ведь их связали специально для того чтобы твои руки и ноги не замерзли даже в самые сильные морозы.
+					a.product-photo._br(href="img/p-5.jpg", data-fancybox="products")
+						+picture('p-5','jpg')
+					a.product-photo._br(href="img/p-6.jpg", data-fancybox="products")
+						+picture('p-6','jpg')

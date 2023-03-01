@@ -1,0 +1,251 @@
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-Extrabold.eot');
+	src: local('Eastman Extrabold'), local('Eastman-Extrabold'),
+		url('../fonts/Eastman-Extrabold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-Extrabold.woff2') format('woff2'),
+		url('../fonts/Eastman-Extrabold.woff') format('woff'),
+		url('../fonts/Eastman-Extrabold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-Extralight.eot');
+	src: local('Eastman Extralight'), local('Eastman-Extralight'),
+		url('../fonts/Eastman-Extralight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-Extralight.woff2') format('woff2'),
+		url('../fonts/Eastman-Extralight.woff') format('woff'),
+		url('../fonts/Eastman-Extralight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-Bold.eot');
+	src: local('Eastman Bold'), local('Eastman-Bold'),
+		url('../fonts/Eastman-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-Bold.woff2') format('woff2'),
+		url('../fonts/Eastman-Bold.woff') format('woff'),
+		url('../fonts/Eastman-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-ExtralightItalic.eot');
+	src: local('Eastman Extralight Italic'), local('Eastman-ExtralightItalic'),
+		url('../fonts/Eastman-ExtralightItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-ExtralightItalic.woff2') format('woff2'),
+		url('../fonts/Eastman-ExtralightItalic.woff') format('woff'),
+		url('../fonts/Eastman-ExtralightItalic.ttf') format('truetype');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-Black.eot');
+	src: local('Eastman Black'), local('Eastman-Black'),
+		url('../fonts/Eastman-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-Black.woff2') format('woff2'),
+		url('../fonts/Eastman-Black.woff') format('woff'),
+		url('../fonts/Eastman-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-BlackItalic.eot');
+	src: local('Eastman Black Italic'), local('Eastman-BlackItalic'),
+		url('../fonts/Eastman-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-BlackItalic.woff2') format('woff2'),
+		url('../fonts/Eastman-BlackItalic.woff') format('woff'),
+		url('../fonts/Eastman-BlackItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-BoldItalic.eot');
+	src: local('Eastman Bold Italic'), local('Eastman-BoldItalic'),
+		url('../fonts/Eastman-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-BoldItalic.woff2') format('woff2'),
+		url('../fonts/Eastman-BoldItalic.woff') format('woff'),
+		url('../fonts/Eastman-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-ExtraboldItalic.eot');
+	src: local('Eastman Extrabold Italic'), local('Eastman-ExtraboldItalic'),
+		url('../fonts/Eastman-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-ExtraboldItalic.woff2') format('woff2'),
+		url('../fonts/Eastman-ExtraboldItalic.woff') format('woff'),
+		url('../fonts/Eastman-ExtraboldItalic.ttf') format('truetype');
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-Italic.eot');
+	src: local('Eastman Italic'), local('Eastman-Italic'),
+		url('../fonts/Eastman-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-Italic.woff2') format('woff2'),
+		url('../fonts/Eastman-Italic.woff') format('woff'),
+		url('../fonts/Eastman-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-Thin.eot');
+	src: local('Eastman Thin'), local('Eastman-Thin'),
+		url('../fonts/Eastman-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-Thin.woff2') format('woff2'),
+		url('../fonts/Eastman-Thin.woff') format('woff'),
+		url('../fonts/Eastman-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eastman Offset';
+	src: url('../fonts/Eastman-RegularOffset.eot');
+	src: local('Eastman Offset'), local('Eastman-RegularOffset'),
+		url('../fonts/Eastman-RegularOffset.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-RegularOffset.woff2') format('woff2'),
+		url('../fonts/Eastman-RegularOffset.woff') format('woff'),
+		url('../fonts/Eastman-RegularOffset.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-HeavyItalic.eot');
+	src: local('Eastman Heavy Italic'), local('Eastman-HeavyItalic'),
+		url('../fonts/Eastman-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-HeavyItalic.woff2') format('woff2'),
+		url('../fonts/Eastman-HeavyItalic.woff') format('woff'),
+		url('../fonts/Eastman-HeavyItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Eastman Variable';
+	src: url('../fonts/EastmanVariable.eot');
+	src: local('Eastman Variable'), local('EastmanVariable'),
+		url('../fonts/EastmanVariable.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/EastmanVariable.woff2') format('woff2'),
+		url('../fonts/EastmanVariable.woff') format('woff'),
+		url('../fonts/EastmanVariable.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-LightItalic.eot');
+	src: local('Eastman Light Italic'), local('Eastman-LightItalic'),
+		url('../fonts/Eastman-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-LightItalic.woff2') format('woff2'),
+		url('../fonts/Eastman-LightItalic.woff') format('woff'),
+		url('../fonts/Eastman-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-MediumItalic.eot');
+	src: local('Eastman Medium Italic'), local('Eastman-MediumItalic'),
+		url('../fonts/Eastman-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-MediumItalic.woff2') format('woff2'),
+		url('../fonts/Eastman-MediumItalic.woff') format('woff'),
+		url('../fonts/Eastman-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-Heavy.eot');
+	src: local('Eastman Heavy'), local('Eastman-Heavy'),
+		url('../fonts/Eastman-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-Heavy.woff2') format('woff2'),
+		url('../fonts/Eastman-Heavy.woff') format('woff'),
+		url('../fonts/Eastman-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-Medium.eot');
+	src: local('Eastman Medium'), local('Eastman-Medium'),
+		url('../fonts/Eastman-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-Medium.woff2') format('woff2'),
+		url('../fonts/Eastman-Medium.woff') format('woff'),
+		url('../fonts/Eastman-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-Regular.eot');
+	src: local('Eastman'), local('Eastman-Regular'),
+		url('../fonts/Eastman-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-Regular.woff2') format('woff2'),
+		url('../fonts/Eastman-Regular.woff') format('woff'),
+		url('../fonts/Eastman-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eastman Offset';
+	src: url('../fonts/Eastman-RegularOffsetItalic.eot');
+	src: local('Eastman Offset Italic'), local('Eastman-RegularOffsetItalic'),
+		url('../fonts/Eastman-RegularOffsetItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-RegularOffsetItalic.woff2') format('woff2'),
+		url('../fonts/Eastman-RegularOffsetItalic.woff') format('woff'),
+		url('../fonts/Eastman-RegularOffsetItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-ThinItalic.eot');
+	src: local('Eastman Thin Italic'), local('Eastman-ThinItalic'),
+		url('../fonts/Eastman-ThinItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-ThinItalic.woff2') format('woff2'),
+		url('../fonts/Eastman-ThinItalic.woff') format('woff'),
+		url('../fonts/Eastman-ThinItalic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Eastman2';
+	src: url('../fonts/Eastman-Light.eot');
+	src: local('Eastman Light'), local('Eastman-Light'),
+		url('../fonts/Eastman-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eastman-Light.woff2') format('woff2'),
+		url('../fonts/Eastman-Light.woff') format('woff'),
+		url('../fonts/Eastman-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}

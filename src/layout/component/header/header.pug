@@ -1,0 +1,120 @@
+header.header 
+	.header__overlay
+	.inner
+		.header__block._br._p-h
+			.header__row
+				.header__left.mob-hidden
+					
+					a.header__backmain(href="https://манжерок.рф/") Вернуться на сайт
+
+				a(href="/").header__logo
+					img(src="img/logo.svg", alt="")
+				.header__right
+					.header-icons
+							a(href="#").account-link 
+								span Добрый день, Валентин
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.75 7H1" stroke="" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+									<path d="M13 1L13 13" stroke="" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+									<path d="M6.75 4L9.75 7L6.75 10" stroke="" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+								</svg>
+
+							//- a(href="#")
+							//- 	<svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							//- 		<path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.99804C9 5.65396 7.657 6.99609 6 6.99609C4.343 6.99609 3 5.65396 3 3.99804C3 2.34212 4.343 1 6 1C7.657 1 9 2.34212 9 3.99804Z" stroke="#2A2A29" stroke-width="1.4"/>
+							//- 		<path fill-rule="evenodd" clip-rule="evenodd" d="M11 14.9909H1C1 14.2808 1 13.6053 1 12.9936C1 11.3368 2.34315 9.99414 4 9.99414H8C9.65685 9.99414 11 11.3368 11 12.9936C11 13.6053 11 14.2808 11 14.9909Z" stroke="#2A2A29" stroke-width="1.4"/>
+							//- 	</svg>
+
+						 
+							a(href="#").favorite-btn
+								<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2.03553 7.03553L8 13L13.9645 7.03553C14.6275 6.37249 15 5.47322 15 4.53553C15 2.58291 13.4171 1 11.4645 1C10.5268 1 9.62751 1.37249 8.96447 2.03553L8 3L7.03553 2.03553C6.37249 1.37249 5.47322 1 4.53553 1C2.58291 1 1 2.58291 1 4.53553C1 5.47322 1.37249 6.37249 2.03553 7.03553Z" stroke="#2A2A29" stroke-width="1.4"/>
+								</svg>
+								.favorite-btn__count 1
+
+						 
+							a(href="#").cart-btn
+								<svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10 2.5L10 5C10 6.65685 8.65685 8 7 8C5.34315 8 4 6.65685 4 5L4 2.5M1 2V14C1 14.5523 1.44772 15 2 15H12C12.5523 15 13 14.5523 13 14V2C13 1.44772 12.5523 1 12 1H2C1.44772 1 1 1.44772 1 2Z" stroke="#2A2A29" stroke-width="1.4"/>
+								</svg>
+								.cart-btn__count 1
+
+					button.header__burgrer
+						<svg class="header__burgrer-open" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 4.33333H12M0 1H12M0 7.66667H12M0 11H12" stroke="#106AC6" stroke-width="1.4"/>
+						</svg>
+						<svg   class="header__burgrer-close"  width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M22 1L1 22" stroke="#2A2A29" stroke-width="1.4"/>
+							<path d="M1 1L22 22" stroke="#2A2A29" stroke-width="1.4"/>
+						</svg>
+
+
+			.header__categories(style="display:none")
+				.header__categories-row
+					.category-it(data-customcursor)
+						.category-it__bg._br 
+							+picture('sh-1','jpg')
+						a(href="#").category-it__link Новая коллекция 
+					.category-it(data-customcursor)
+						.category-it__bg._br 
+							+picture('sh-2','jpg')
+						a(href="#").category-it__link Распродажа
+					.category-it(data-customcursor)
+						.category-it__bg._br 
+							+picture('sh-3','jpg')
+						a(href="#").category-it__link Аксессуары  
+					.category-it(data-customcursor)
+						.category-it__bg._br 
+							+picture('sh-4','jpg')
+						a(href="#").category-it__link Эко-товары
+					.category-it(data-customcursor)
+						.category-it__bg._br 
+							+picture('sh-5','jpg')
+						a(href="#").category-it__link Сувениры и подарки
+					.category-it(data-customcursor)
+						.category-it__bg._br 
+							+picture('sh-6','jpg')
+						a(href="#").category-it__link Спортивные товары
+
+			.header__cart(style="display:none")
+				.header-product-template
+					.header-product 
+						.header-product__img 
+							+picture('p-','jpg')
+						.header-product__content 
+							.header-product__title  
+							.header-product__desc 
+						.header-product__count-wrap 
+							button(type='button').header-product__count-minus -
+							input(type="number",value='1').header-product__count-input
+							button(type='button').header-product__count-plus +
+						.header-product__price  
+						button.header-product__delete(data-url="#")
+							<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M23.949 12.5C23.949 19.0263 18.7353 24.3 12.3245 24.3C5.91377 24.3 0.7 19.0263 0.7 12.5C0.7 5.97368 5.91377 0.7 12.3245 0.7C18.7353 0.7 23.949 5.97368 23.949 12.5Z" stroke-width="1.4"/>
+								<path d="M17.7471 7.39471L7.39453 17.7473" stroke-width="1.4"/>
+								<path d="M7.39448 7.39471L17.7471 17.7473" stroke-width="1.4"/>
+							</svg>
+		
+				.header-products 
+					.header-product 
+						.header-product__img 
+							+picture('p-2','jpg')
+						.header-product__content 
+							.header-product__title Бабушкины варежки
+							.header-product__desc One size   |   BLUE/WHITE
+						.header-product__count-wrap 
+							button(type='button').header-product__count-minus -
+							input(type="number",value='1').header-product__count-input
+							button(type='button').header-product__count-plus +
+						.header-product__price 1200 ₽
+						button.header-product__delete(data-url="#")
+							<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M23.949 12.5C23.949 19.0263 18.7353 24.3 12.3245 24.3C5.91377 24.3 0.7 19.0263 0.7 12.5C0.7 5.97368 5.91377 0.7 12.3245 0.7C18.7353 0.7 23.949 5.97368 23.949 12.5Z" stroke-width="1.4"/>
+								<path d="M17.7471 7.39471L7.39453 17.7473" stroke-width="1.4"/>
+								<path d="M7.39448 7.39471L17.7471 17.7473" stroke-width="1.4"/>
+							</svg>
+		
+				.header__cart-btns 
+					a.btn2(href="#") Оформить заказ	
+					a.btn4(href="#") Продолжить покупки

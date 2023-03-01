@@ -1,0 +1,87 @@
+extends ../../layout/layout
+block title
+	title Манжерок 
+block content
+	.inner
+		+breadcrumb(['Главная'], 'Корзина')
+		a.h1._back(href="#") 
+				<svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14 23.5L2.15385 12.5L14 1.5" stroke="#B2C2D3" stroke-width="2"/>
+				</svg>
+				| Платежная информация
+		.block
+			form(action="/",method="post")#checkout-form.basket-page 
+				.basket-page__left
+					.pay-metods.mblock._br._p
+						.pay-metod._open
+							.pay-metod__head 
+								h4 Банковская карта:
+								.pay-metod__toggle
+							.pay-metod__body(style="display:block")
+								.radio-row 
+									label.radio
+										input(type="radio" checked="checked" value="visa" data-type="visa" data-rule-required name="pay").cart-type-select
+										.radio__indicator
+										.radio__text VISA
+									label.radio
+										input(type="radio"  value="mastercard" data-type="mastercard" data-rule-required name="pay").cart-type-select
+										.radio__indicator
+										.radio__text mastercard
+									label.radio
+										input(type="radio" value="mir" data-type="mir" data-rule-required name="pay").cart-type-select
+										.radio__indicator
+										.radio__text Mir
+								.paycards
+									.paycard(type="visa")
+										.paycard__content
+											.paycard__wifi
+											.paycard__logo
+											.paycard__row 
+												label.paycard__input
+													span Номер карты
+													input(type="text",name="number")._mask-numbercard
+												label.paycard__input
+													span ММ/ГГ 
+													input(type="text",name="date")._mask-datercard
+											label.paycard__input
+												span ИМЯ ДЕРЖАТЕЛЯ КАРТЫ
+												input(type="text",name="name")
+									.paycard._back(type="visa")
+										.paycard__content
+											.paycard__line
+											label.paycard__input._cvv
+												span CVV
+												input(type="text",name="cvv")._mask-cvvrcard
+											
+											label.paycard__input
+													
+								.text 	
+									blockquote Имя и фамилия указываются только на латинском языке
+						.pay-metod
+							.pay-metod__head 
+								h4 Наличными при получении:
+								.pay-metod__toggle
+							.pay-metod__body
+								.radio-row 
+									label.radio
+										input(type="radio" checked value="visa" data-type="visa" data-rule-required name="pay").cart-type-select
+										.radio__indicator
+										.radio__text НАЛИчные
+
+
+				.basket-page__right
+					.basket-page__details
+						h4
+							color Детали заказа
+						dl 
+							dt Сумма с учетом НДС: 
+							dd.basket-page__price 2 190 ₽
+							dt  Доставка: 
+							dd.basket-page__delivery 0 ₽
+						.basket-page__total-block 
+							dl 
+								dt ИТОГО:
+								dd.basket-page__total-price 2 190 ₽ 
+							button.btn2.basket-page__go(type="submit") Оформить заказ 
+							.form-bottom Нажимая кнопку, вы соглашаетесь с условиями 
+								a(href="#") обработки персональных данных

@@ -1,0 +1,77 @@
+extends ../../layout/layout
+block title
+	title Манжерок 
+block content
+	.inner
+		+breadcrumb(['Главная'], 'Корзина')
+		a.h1._back(href="#") 
+				<svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14 23.5L2.15385 12.5L14 1.5" stroke="#B2C2D3" stroke-width="2"/>
+				</svg>
+				| Параметры доставки
+		.block
+			form(action="/",method="post")#checkout-form.basket-page 
+				.basket-page__left
+					.mblock._br._p
+						h4 ПЕРСОНАЛЬНЫЕ ДАННЫЕ:
+				
+						lablel.form-item
+							.form-item__label ФИО
+							input( data-rule-required,type="text", name="fio")
+						lablel.form-item
+							.form-item__label ЭЛЕКТРОННЫЙ АДРЕС
+							input( data-rule-required data-rule-email ,type="text", name="email",placeholder="mail@mail.ru")
+						lablel.form-item
+							.form-item__label Номер телефона
+							input( data-rule-required,type="text", name="phone",placeholder="+7 XXX XX XX XX")._mask-phone
+						
+					.mblock._br._p
+						h4 Адрес доставки:
+				
+						lablel.form-item
+							.form-item__label ИНДЕКС
+							input( data-rule-required,type="text", name="postalcode")._mask-postalcode
+						
+						lablel.form-item
+							.form-item__label Город
+							input( data-rule-required,type="text", name="city")
+						
+						lablel.form-item
+							.form-item__label Улица/ДОМ/КВАРТИРА
+							input( data-rule-required,type="text", name="home")
+						
+			
+						lablel.form-item
+							.form-item__label ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ 
+							textarea(name="comment", cols="30", rows="10")
+						
+					.mblock._br._p
+						h4 СПОСОБ ДОСТАВКИ:
+						label.radio
+							input(type="radio" data-price="350" data-rule-required name="delivery").delivery-type 
+							.radio__indicator
+							.radio__text Доставка по России — 350 ₽
+						label.radio
+							input(type="radio" data-price="300" data-rule-required name="delivery").delivery-type 
+							.radio__indicator
+							.radio__text Курьером по Москве — 300 ₽
+						label.radio
+							input(type="radio" data-price="0" data-rule-required name="delivery").delivery-type 
+							.radio__indicator
+							.radio__text Самовывоз (пр-т Андропова, 18 корп. 3)
+				.basket-page__right
+					.basket-page__details
+						h4
+							color Детали заказа
+						dl 
+							dt Сумма с учетом НДС: 
+							dd.basket-page__price 2 190 ₽
+							dt  Доставка: 
+							dd.basket-page__delivery 0 ₽
+						.basket-page__total-block 
+							dl 
+								dt ИТОГО:
+								dd.basket-page__total-price 2 190 ₽ 
+							button.btn2.basket-page__go(type="submit") Оформить заказ 
+							.form-bottom Нажимая кнопку, вы соглашаетесь с условиями 
+								a(href="#") обработки персональных данных

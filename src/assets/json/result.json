@@ -1,0 +1,24 @@
+{
+	"periods": [
+		{
+			"type": "low",
+			"start": "9:00",
+			"finish": "12:00"
+		},
+		{
+			"type": "medium",
+			"start": "12:01",
+			"finish": "14:10"
+		},
+		{
+			"type": "high",
+			"start": "14:11",
+			"finish": "18:00"
+		},
+		{
+			"type": "very-high",
+			"start": "18:01",
+			"finish": "19:59"
+		}
+	]
+}

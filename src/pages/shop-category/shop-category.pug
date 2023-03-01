@@ -1,0 +1,166 @@
+extends ../../layout/layout
+block title
+	title Манжерок 
+block content
+	.inner
+		+breadcrumb(['Главная'], 'Новая коллекция')
+		a.h1._back(href="#") 
+				<svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14 23.5L2.15385 12.5L14 1.5" stroke="#B2C2D3" stroke-width="2"/>
+				</svg>
+				| Квадрациклы
+		.block
+			.products 
+				.product-preview._row-2._col-2
+					.product-preview__img
+						+picture('sc-1','jpg')
+					form(action="json/favorite.json",method="GET").product-preview__like.like-change
+						label
+							input(type="checkbox",name="favorite").like-change__checkbox
+							<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.35585 6.03553L7.32031 12L13.2848 6.03553C13.9478 5.37249 14.3203 4.47322 14.3203 3.53553C14.3203 1.58291 12.7374 0 10.7848 0C9.8471 0 8.94782 0.372492 8.28478 1.03553L7.32031 2L6.35585 1.03553C5.69281 0.372493 4.79353 0 3.85585 0C1.90322 0 0.320312 1.58291 0.320312 3.53553C0.320312 4.47322 0.692804 5.37249 1.35585 6.03553Z" />
+							</svg>
+
+					.product-preview__title БАБУШКИНЫ ВАРЕЖКИ
+					.product-preview__price 1 200 ₽
+					a.product-preview__link(href='#')
+				.product-preview._row-2
+					.product-preview__img
+						+picture('sc-2','jpg')
+					form(action="json/favorite.json",method="GET").product-preview__like.like-change
+						label
+							input(type="checkbox",name="favorite").like-change__checkbox
+							<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.35585 6.03553L7.32031 12L13.2848 6.03553C13.9478 5.37249 14.3203 4.47322 14.3203 3.53553C14.3203 1.58291 12.7374 0 10.7848 0C9.8471 0 8.94782 0.372492 8.28478 1.03553L7.32031 2L6.35585 1.03553C5.69281 0.372493 4.79353 0 3.85585 0C1.90322 0 0.320312 1.58291 0.320312 3.53553C0.320312 4.47322 0.692804 5.37249 1.35585 6.03553Z" />
+							</svg>
+					.product-preview__title ЛАПКИ ЙЕТИ
+					.product-preview__price 990 ₽
+					a.product-preview__link(href='#')
+				.product-preview 
+					.product-preview__img
+						+picture('sc-3','jpg')
+					.product-preview__like
+						<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.03553 7.03553L8 13L13.9645 7.03553C14.6275 6.37249 15 5.47322 15 4.53553C15 2.58291 13.4171 1 11.4645 1C10.5268 1 9.62751 1.37249 8.96447 2.03553L8 3L7.03553 2.03553C6.37249 1.37249 5.47322 1 4.53553 1C2.58291 1 1 2.58291 1 4.53553C1 5.47322 1.37249 6.37249 2.03553 7.03553Z" stroke-width="1.4"/>
+						</svg>
+
+					.product-preview__title ЛОНГСЛИВ «Гербарий»
+					.product-preview__price 2 500 ₽
+					a.product-preview__link(href='#')
+				.product-preview 
+					.product-preview__img
+						+picture('sc-4','jpg')
+					form(action="json/favorite.json",method="GET").product-preview__like.like-change
+						label
+							input(type="checkbox",name="favorite").like-change__checkbox
+							<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.35585 6.03553L7.32031 12L13.2848 6.03553C13.9478 5.37249 14.3203 4.47322 14.3203 3.53553C14.3203 1.58291 12.7374 0 10.7848 0C9.8471 0 8.94782 0.372492 8.28478 1.03553L7.32031 2L6.35585 1.03553C5.69281 0.372493 4.79353 0 3.85585 0C1.90322 0 0.320312 1.58291 0.320312 3.53553C0.320312 4.47322 0.692804 5.37249 1.35585 6.03553Z" />
+							</svg>
+
+					.product-preview__title Футболка
+					.product-preview__price 1 500 ₽
+					a.product-preview__link(href='#')
+				.product-preview 
+					.product-preview__img
+						+picture('sc-5','jpg')
+					form(action="json/favorite.json",method="GET").product-preview__like.like-change
+						label
+							input(type="checkbox",name="favorite").like-change__checkbox
+							<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.35585 6.03553L7.32031 12L13.2848 6.03553C13.9478 5.37249 14.3203 4.47322 14.3203 3.53553C14.3203 1.58291 12.7374 0 10.7848 0C9.8471 0 8.94782 0.372492 8.28478 1.03553L7.32031 2L6.35585 1.03553C5.69281 0.372493 4.79353 0 3.85585 0C1.90322 0 0.320312 1.58291 0.320312 3.53553C0.320312 4.47322 0.692804 5.37249 1.35585 6.03553Z" />
+							</svg>
+
+					.product-preview__title МАЙКА СИБИРЯКА
+					.product-preview__price 1 900 ₽
+					a.product-preview__link(href='#')
+				.product-preview 
+					.product-preview__img
+						+picture('sc-6','jpg')
+					form(action="json/favorite.json",method="GET").product-preview__like.like-change
+						label
+							input(type="checkbox",name="favorite").like-change__checkbox
+							<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.35585 6.03553L7.32031 12L13.2848 6.03553C13.9478 5.37249 14.3203 4.47322 14.3203 3.53553C14.3203 1.58291 12.7374 0 10.7848 0C9.8471 0 8.94782 0.372492 8.28478 1.03553L7.32031 2L6.35585 1.03553C5.69281 0.372493 4.79353 0 3.85585 0C1.90322 0 0.320312 1.58291 0.320312 3.53553C0.320312 4.47322 0.692804 5.37249 1.35585 6.03553Z" />
+							</svg>
+
+					.product-preview__title Маска «F   CK VIRUS»
+					.product-preview__price 450 ₽
+					a.product-preview__link(href='#')
+				.product-preview 
+					.product-preview__img
+						+picture('sc-7','jpg')
+					form(action="json/favorite.json",method="GET").product-preview__like.like-change
+						label
+							input(type="checkbox",name="favorite").like-change__checkbox
+							<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.35585 6.03553L7.32031 12L13.2848 6.03553C13.9478 5.37249 14.3203 4.47322 14.3203 3.53553C14.3203 1.58291 12.7374 0 10.7848 0C9.8471 0 8.94782 0.372492 8.28478 1.03553L7.32031 2L6.35585 1.03553C5.69281 0.372493 4.79353 0 3.85585 0C1.90322 0 0.320312 1.58291 0.320312 3.53553C0.320312 4.47322 0.692804 5.37249 1.35585 6.03553Z" />
+							</svg>
+
+					.product-preview__title Маска «F   CK VIRUS»
+					.product-preview__price 450 ₽
+					a.product-preview__link(href='#')
+				.product-preview 
+					.product-preview__img
+						+picture('sc-8','jpg')
+					form(action="json/favorite.json",method="GET").product-preview__like.like-change
+						label
+							input(type="checkbox",name="favorite").like-change__checkbox
+							<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.35585 6.03553L7.32031 12L13.2848 6.03553C13.9478 5.37249 14.3203 4.47322 14.3203 3.53553C14.3203 1.58291 12.7374 0 10.7848 0C9.8471 0 8.94782 0.372492 8.28478 1.03553L7.32031 2L6.35585 1.03553C5.69281 0.372493 4.79353 0 3.85585 0C1.90322 0 0.320312 1.58291 0.320312 3.53553C0.320312 4.47322 0.692804 5.37249 1.35585 6.03553Z" />
+							</svg>
+
+					.product-preview__title ОБЛОЖКА ДЛЯ ПАСПОРТА
+					.product-preview__price 800 ₽
+					a.product-preview__link(href='#')
+				.product-preview 
+					.product-preview__img
+						+picture('sc-9','jpg')
+					form(action="json/favorite.json",method="GET").product-preview__like.like-change
+						label
+							input(type="checkbox",name="favorite").like-change__checkbox
+							<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.35585 6.03553L7.32031 12L13.2848 6.03553C13.9478 5.37249 14.3203 4.47322 14.3203 3.53553C14.3203 1.58291 12.7374 0 10.7848 0C9.8471 0 8.94782 0.372492 8.28478 1.03553L7.32031 2L6.35585 1.03553C5.69281 0.372493 4.79353 0 3.85585 0C1.90322 0 0.320312 1.58291 0.320312 3.53553C0.320312 4.47322 0.692804 5.37249 1.35585 6.03553Z" />
+							</svg>
+
+					.product-preview__title НАБОР СТИКЕРОВ
+					.product-preview__price 500 ₽
+					a.product-preview__link(href='#')
+				.product-preview 
+					.product-preview__img
+						+picture('sc-10','jpg')
+					form(action="json/favorite.json",method="GET").product-preview__like.like-change
+						label
+							input(type="checkbox",name="favorite").like-change__checkbox
+							<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.35585 6.03553L7.32031 12L13.2848 6.03553C13.9478 5.37249 14.3203 4.47322 14.3203 3.53553C14.3203 1.58291 12.7374 0 10.7848 0C9.8471 0 8.94782 0.372492 8.28478 1.03553L7.32031 2L6.35585 1.03553C5.69281 0.372493 4.79353 0 3.85585 0C1.90322 0 0.320312 1.58291 0.320312 3.53553C0.320312 4.47322 0.692804 5.37249 1.35585 6.03553Z" />
+							</svg>
+
+					.product-preview__title ПРЕЗЕРВАТИВЫ 3 штуки
+					.product-preview__price 299 ₽
+					a.product-preview__link(href='#')
+			.pagination 
+				a(href="#").pagination__prev 
+					<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 11L1 6L6 1" stroke="" stroke-width="1.4"/>
+					</svg>
+				a(href="#").pagination__page 1
+				a(href="#").pagination__page._active 2
+				a(href="#").pagination__page 3
+				a(href="#").pagination__page 4
+				a(href="#").pagination__page 5
+				a(href="#").pagination__page 6
+				a(href="#").pagination__next
+					<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 11L6 6L1 1" stroke="" stroke-width="1.4"/>
+					</svg>
+
+		.block.category-list 
+			.category-it
+				.category-it__bg._br 
+					+picture('sh-3','jpg')
+				a(href="#").link-chevron.category-it__link.h2 Аксессуары  
+			.category-it
+				.category-it__bg._br 
+					+picture('sh-4','jpg')
+				a(href="#").link-chevron.category-it__link.h2 Эко-товары
+			

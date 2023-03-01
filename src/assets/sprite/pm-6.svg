@@ -1,0 +1,18 @@
+<svg width="48" height="47" viewBox="0 0 48 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 25V16.51C14 13.05 17.08 11 20.87 11H25.13C28.93 11 32 13.06 32 16.52V25" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M23.45 1H22.55C21.1417 1 20 2.14167 20 3.55V5.45C20 6.85833 21.1417 8 22.55 8H23.45C24.8583 8 26 6.85833 26 5.45V3.55C26 2.14167 24.8583 1 23.45 1Z" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M18 25V17" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M28 17V25" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M11 32V25H35V32" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M15 32V29H31V32" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M6.50781 39.76C6.58781 39.76 6.66781 39.75 6.74781 39.75C9.83781 39.75 12.3478 42.08 12.4878 45" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M12.5078 45C12.6378 42.16 15.0178 39.89 17.9778 39.76H18.0078C18.0878 39.76 18.1678 39.75 18.2478 39.75C21.3378 39.75 23.8478 42.08 23.9878 45" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M24.0078 45C24.1378 42.16 26.5178 39.89 29.4778 39.76H29.5078C29.5878 39.76 29.6678 39.75 29.7478 39.75C32.8378 39.75 35.3478 42.08 35.4878 45" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M40.9856 39.76C38.0256 39.89 35.6456 42.16 35.5156 45" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M6.51 39.76C6.51 39.68 6.5 39.59 6.5 39.51C6.5 36.47 9.07 34 12.25 34C15.43 34 18 36.46 18 39.51" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M18 39.51C18 36.47 20.57 34 23.75 34C26.93 34 29.5 36.46 29.5 39.51" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M29.5 39.51C29.5 36.47 32.07 34 35.25 34C38.43 34 41 36.46 41 39.51C41 39.6 41 39.68 40.99 39.76" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M1 45.25C1 42.29 3.45 39.88 6.51 39.76" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M47.0022 45.25C47.0022 42.21 44.4322 39.74 41.2522 39.74C41.1622 39.74 41.0722 39.74 40.9922 39.75" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+<path d="M0 46H48" stroke="#106AC6" stroke-width="1.4" stroke-miterlimit="10"/>
+</svg>

@@ -1,0 +1,245 @@
+.paycards {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	@media(max-width:678px) {
+		max-width: 400px;
+		grid-template-columns: 1fr;
+	}
+}
+
+.pay-metod {
+	border-bottom: 1px solid #B2C2D3;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+
+	max &:last-child {
+		padding-bottom: 0;
+		margin-bottom: 0;
+		border: 0 solid;
+	}
+
+	&__head {
+		padding-right: 50px;
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		flex-wrap: wrap;
+		gap: 5px 30px;
+		position: relative;
+
+		h4,
+		.h4 {
+			margin: 0;
+		}
+
+	}
+
+	&__body {
+		display: none;
+		padding: 27px 17px;
+		margin-top: 25px;
+		background: #F3F8FB;
+		border-radius: 10px;
+	}
+
+	&__toggle {
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		cursor: pointer;
+		color: $black;
+		transform: translateY(-50%);
+		width: 30px;
+		height: 30px;
+
+		&::before,
+		&::after {
+			width: 100%;
+			height: 2px;
+			background: $black;
+			display: block;
+			content: '';
+			left: 0;
+			position: absolute;
+			top: 50%;
+			margin-top: -1px;
+
+		}
+
+		&::after {
+			transform: rotate(-90deg);
+			transition: transform 0.3s;
+
+			.pay-metod._open & {
+				transform: rotate(0deg);
+			}
+		}
+
+		path {
+			stroke: currentColor;
+		}
+
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+
+.paycard {
+	border-radius: 20px;
+	overflow: hidden;
+	position: relative;
+
+	&[type="visa"] {
+		background: linear-gradient(90deg, #3F85C5 0%, #224CB9 100%);
+	}
+
+	&[type="mastercard"] {
+		background: #2A2A29;
+	}
+
+	&[type="mir"] {
+		background: #69B167;
+	}
+
+	&__wifi {
+		background-image: url('../img/wifi.svg');
+		width: 16px;
+		height: 24px;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 17px;
+		left: 24px;
+	}
+
+	&__logo {
+		position: absolute;
+		right: 15px;
+		height: 20px;
+		width: 40px;
+		top: 20px;
+
+		.paycard[type="visa"] & {
+			background-image: url('../img/logo-visa.svg');
+			background-position: center right;
+			background-repeat: no-repeat;
+		}
+
+		.paycard[type="mastercard"] & {
+			background-image: url('../img/logo-mastercard.svg');
+			background-position: center right;
+			background-repeat: no-repeat;
+		}
+
+		.paycard[type="mir"] & {
+			background-image: url('../img/logo-mir.svg');
+			background-position: center right;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__row {
+		display: grid;
+		gap: 13px;
+		grid-template-columns: auto 65px;
+	}
+
+	&__line {
+		position: absolute;
+		height: 36px;
+		width: 100%;
+		background: #616161;
+		left: 0;
+		top: 24px;
+	}
+
+	&__input {
+		color: #fff;
+		font-size: 8px;
+		line-height: 9px;
+		letter-spacing: -0.02em;
+		margin-top: 11px;
+		text-transform: uppercase;
+		display: block;
+		height: 41px;
+
+		&._cvv {
+			width: 53px;
+			min-width: 53px;
+			max-width: 53px;
+			width: 100%;
+			margin-left: auto;
+		}
+
+		span {
+			line-height: 9px;
+			display: block;
+		}
+
+		input {
+			display: block;
+			width: 100%;
+			background-color: #fff;
+			border: 0 solid;
+			border-radius: 5px;
+			font-size: 8px;
+			line-height: 9px;
+			letter-spacing: -0.02em;
+			padding: 9px 14px;
+			margin-top: 5px;
+
+			&::placeholder {
+				color: #C0C2CE;
+			}
+		}
+	}
+
+	&::after {
+		display: block;
+		content: '';
+		padding-bottom: 64%;
+	}
+
+	&__content {
+		position: absolute;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		padding: 14px 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+
+		.paycard._back & {
+			background: none !important;
+		}
+
+		.paycard[type="visa"] & {
+			background: url('../img/bg-visa.svg');
+			background-position: bottom right;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		.paycard[type="mastercard"] & {
+			background: url('../img/bg-mastercard.svg');
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		.paycard[type="mir"] & {
+			background: url('../img/bg-mir.svg');
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
+}
